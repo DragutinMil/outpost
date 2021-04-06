@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue.min.css" integrity="sha512-YnP4Ql71idaMB+/ZG38+1adSSQotdqvixQ+dQg8x/IFA4heIj6i0BC31W5T5QUdK1Uuwa01YdqdcT42q+RldAg==" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet" type="text/css" />    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N03VB3HPNY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-N03VB3HPNY');
+    </script>
+    <title>Outpost-chess connections</title>
+</head>
+<body>
+    <header id="header2" >
+      
+        <img src=".\svg\Screenshot.png" alt="">
+       
+    </header>
+    <main id="app" class="main2" >
+        <div  class="center-h2">
+            <p id="centered">We are excited to have you onboard Outpost</p>
+        </div>
+        
+        <p id="centered" class="page2text16" >
+            
+            Together we can help the chess community connect, collaborate, and succeed together.
+        </p>
+        <div id="page2-middle">
+            <div class="input-center">
+            
+                <b-form-input type="email" v-model="emailadress" placeholder="Email" class="input-page2"></b-form-input>
+            
+            </div >
+            <div id="radio-page2">
+                <div>
+                        <div class="check-inline">
+                        <p>Player</p>
+                        <b-form-checkbox class="radio-flex-end" id="checkbox-1" v-model="selected1" name="checkbox-1"   unchecked-value="" ></b-form-checkbox>
+                         
+                        </div>  
+            
+                        <div class="check-inline">
+                            <p>Club administrator</p>
+                        <b-form-checkbox  class="radio-flex-end" id="checkbox-2" v-model="selected2" name="checkbox-2"  unchecked-value="" ></b-form-checkbox>
+                            
+                           
+                        </div> 
+                        <div class="check-inline">
+                            <p>Organizer</p>
+                        <b-form-checkbox class="radio-flex-end"  id="checkbox-3" v-model="selected3" name="checkbox-3"  unchecked-value="" > </b-form-checkbox>
+                       
+                    </div>
+                </div>  
+                <div>
+                    <div class="check-inline">
+                        <p >Arbiter</p>
+                        <div ><b-form-checkbox  class="radio-flex-end" id="checkbox-4" v-model="selected4" name="checkbox-1"  unchecked-value="" > </b-form-checkbox>
+                          </div>
+                        </div>  
+            
+                        <div class="check-inline">
+                            <p>Coach Fan</p>
+                        <b-form-checkbox class="radio-flex-end" button-variant="pink"  id="checkbox-5" v-model="selected5" name="checkbox-2"   unchecked-value="" ></b-form-checkbox>
+                            
+                         
+                        </div> 
+                        <div class="check-inline">
+                            <p>Investitor</p>
+                        <b-form-checkbox class="radio-flex-end"  id="checkbox-6" v-model="selected6" name="checkbox-3"   unchecked-value=""> </b-form-checkbox>
+                       
+                    </div>
+                </div>  
+            </div>
+
+            <b-form-textarea class="input-page2"
+                
+                v-model="textarea"
+                placeholder="Message"
+                rows="6"
+                
+             ></b-form-textarea>
+
+             <p class="page2text16" >
+            
+                Please give us your best thoughts on what you would like to have in your digital community and what features you would like to use every day and we’ll give our best to make it happen.
+            </p>
+            <div class="button-page2">
+                <!-- <a href="./outpost-thank-you-page.html" style="background-color: white;"> --><input class="button2" @click="dataimport()" type="button" value="Join"> <!-- </a>-->
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div id="foot1">
+          <a href="https://www.facebook.com/outpostchess"><p class="foot1text">Facebook</p></a>
+           <a href=""><p class="foot1text">Instagram</p></a>
+           <a href=""><p class="foot1text">Twitter</p></a>
+        </div>
+        <div id="foot2">All rights reserved copyrights Outpost 2021</div>
+        <div id="foot3">DIMIS creating & improving brands</div>
+     </footer> 
+
+
+      
+   
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+<script  src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue.min.js" integrity="sha512-Z0dNfC81uEXC2iTTXtE0rM18I3ATkwn1m8Lxe0onw/uPEEkCmVZd+H8GTeYGkAZv50yvoSR5N3hoy/Do2hNSkw==" crossorigin="anonymous"></script>
+
+<script src="/js/index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+</html>
